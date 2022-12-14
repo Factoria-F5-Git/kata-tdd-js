@@ -1,8 +1,9 @@
-const getAboutUsLink = require("../src/index");
-test("Returns about-us for english language", () => {
-    expect(getAboutUsLink("en-US")).toBe("/about-us");
-});
+const fizzBuzzGame = require("../src/index");
 
-test("something", () => {
-    expect(2+3).toBe(5)
+test("FizzBuzzGame returns fizz when number is 30", () => {
+    let inputNumber = 30
+
+    let fizzBuzzResponse = fizzBuzzGame(inputNumber)
+
+    expect(fizzBuzzResponse).toBe("Fizz")
 })
