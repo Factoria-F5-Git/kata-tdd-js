@@ -1,11 +1,14 @@
 
 function fizzBuzzGame(number)
 {
-  if (number % 3 === 0 && number % 5 === 0) {
+  const isMultipleOfThree = number % 3 === 0
+  const isMultipleOfFive = number % 5 === 0
+
+  if (isMultipleOfThree && isMultipleOfFive) {
     return "FizzBuzz"
   }
-  
-  if (number % 3 === 0) {
+
+  if (isMultipleOfThree) {
     return "Fizz"
   }
 
