@@ -1,11 +1,7 @@
 
 function fizzBuzzGame(number)
 {
-  if (number === 30) {
-    return "Fizz"
-  }
-  
-  return "Buzz"
+  return number % 3 === 0 ? "Fizz" : "Buzz"
 }
 
 module.exports = fizzBuzzGame;

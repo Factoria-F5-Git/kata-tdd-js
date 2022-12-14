@@ -15,3 +15,11 @@ test("FizzBuzzGame returns Buzz when number is 50", () => {
 
     expect(fizzBuzzResponse).toBe("Buzz")
 })
+
+test("FizzBuzzGame returns Buzz when number is 33", () => {
+    let inputNumber = 33
+
+    let fizzBuzzResponse = fizzBuzzGame(inputNumber)
+
+    expect(fizzBuzzResponse).toBe("Fizz")
+})
